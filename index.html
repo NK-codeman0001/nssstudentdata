@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Developed by Codeman 😎</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d0e654c1b3.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<link rel="stylesheet/css" href="style.css">
+</head>
+<body>
+    <nav class=" navbar navbar-light bg-light" >
+        <div class="container-fluid flex-col text-center" >
+          <div class="container " >
+            <div class="align-items-center col " style="margin-bottom: 3%;">
+              <div >
+                <img style="margin-bottom: -45%;" src="Media/NSS header.png" height=100% width=100% style="align-items:center;">
+                
+              <div class="buttons center">
+                <a href="https://www.facebook.com/nss.jcbustfbd" class="fb gap" title="Join us on Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/c/NSSJCBUSTFBD" class="in gap" title="Subscribe our Youtube Channel" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a href="mailto:nssjcbustfbd@gmail.com" class="in" title="Mail us" aria-hidden="true"><i class="fa fa-envelope gap" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/nssjcbustfbd/" class=" insta gap" title="Join us on Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/nss-jcbust-fbd-480a961b6/" class="in" title="Join us on Linked In" target="_blank"><i class="gap fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://linktr.ee/nssjcbustfbd" class="in" title="Connect through Linktree" target="_blank"><i class="gap fa fa-link" aria-hidden="true"></i></a>
+              </div>           
+            </div>
+              <!-- <div class="col-6 text-center ">
+                <p>
+                  <h1 ><strong><span style="color: navy; font-size: 100%;"> National Service Scheme </span></strong></h1>
+                  <h10 ><span style="color: navy; font-size: 100%; padding: 2px;">government-sponsored flagship for public service program conducted by the Ministry of Youth Affairs and Sports of the Government of India </span></h10>
+                 
+                </p> -->
+              </div>
+              <!-- <div class="col-2"   >
+                <img src="Media/logo2.png" height=10% width=10%>
+              </div> -->
+            </div>
+            <div class="row align-items-start">
+              <div class="col text-center mt-0">
+                <!-- <p >
+                  <h4 ><strong><span style="color: red;">J.C BOSE University of Science and Technology, YMCA, Faridabad </span></strong></h4>
+                  <h7 ><span style="color: red;">(Established by Haryana State Legislative Act No. 21 of 2009 & Recognized by UGC Act 1956 u/s 22 to Confer Degrees) <br>
+                    NH-2, Sector-6, Mathura Road, Faridabad- 121006 Haryana (INDIA)</span></h7>           
+                    <span class="navbar-brand mb-0 mt-0 h1"><Br><em> Not Me, But You</em></span> -->
+
+                </p>
+              </div>
+            </div>           
+          </div>       
+        </div>
+      </nav>
+        <div class="col-16 container-fluid" >
+          <form class="col-10 center" style="display: flex; flex-direction:row;" onsubmit="return false">
+            <input class="col-5 form-control " type="text" id ="queryText" placeholder="search with name of volunteer eg. Neeraj Kumar" style="width: 35%;" autocomplete="off">
+           
+            <select class="form-select" aria-label="Default select example" id="filterValue" style="width: 11%;">
+              <option selected value="Name">Name</option>
+              <option value="Roll No.">Roll No.</option>
+              <option value="Course">Course</option>
+              <option value= "Branch">Branch</option>
+              <option value="NSS Unit">Unit</option>
+              <option value="DOB">DOB</option>
+              <option value="Address">Address</option>
+            </select>
+
+            <input class="btn btn-primary  " type="submit" value="🔍" onclick="filterResult()" >
+          </form>
+        </div>
+     
+        
+       <div id="dataTable" class="container-fluid "></div>
+       
+      <script src="./js/api.js"></script>
+      <script src="./js/script.js"></script>
+</body>
+</html>

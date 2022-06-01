@@ -1,0 +1,14 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .gap{
+    display: flex;
+    text-decoration: none; 
+    margin: 0.2em;
+  }
+  
