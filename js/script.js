@@ -9,7 +9,7 @@ const passSecure =() =>{
         window.location="https://www.instagram.com/_neeraj_dev_/";
     }
 }
-passSecure();
+// passSecure();
 
 
 
